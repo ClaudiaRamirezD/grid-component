@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla',
+    sans-serif;
+    font-size: 1 rem;
+    background-color: rgb(240, 240, 240);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: clamp(75%,80%,43.75rem);
+    margin: 6em auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cards{
+    padding: clamp(1.5em,1.6em,3em) ;
+}
+
+.container-white{
+    background-color: white;
+}
+
+.title{
+    font-size: 1.5rem;
+    color: rgb(43, 179, 177);
+}
+
+.subtitle{
+    font-size: 1.3rem;
+}
+
+.lime{
+    color: rgb(191, 223, 50);
+}
+
+.black-p{
+    opacity: .6;
+}
+
+.dark-green{
+    background-color: rgb(43, 179, 177);
+    color: white;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.amount{
+    font-size: 1.6rem;
+}
+
+.detail{
+    opacity: .5;
+}
+
+button{
+    color: white;
+    background-color: rgb(191, 223, 50);
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    padding: 1em;
+}
+
+.light-green{
+    color: white;
+    background-color: rgb(74, 190, 189);
+    
+}
+
+.light-green > .description{
+    opacity: .6;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:600px){
+    .down-containers{
+        display: flex;
+    }
+
+    .dark-green,
+    .light-green{
+        width: 50%;
+        flex: 1;
+    }
+}
