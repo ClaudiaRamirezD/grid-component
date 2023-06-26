@@ -20,7 +20,7 @@ img {
 }
 
 .container {
-    width: clamp(75%,80%,43.75rem);
+    width: clamp(310px,70%,45rem);
     margin: 6em auto;
     border-radius: 5px;
     overflow: hidden;
@@ -28,7 +28,7 @@ img {
 }
 
 .cards{
-    padding: clamp(1.5em,1.6em,3em) ;
+    padding: clamp(1.5em,2em,3em) ;
 }
 
 .container-white{
@@ -36,12 +36,14 @@ img {
 }
 
 .title{
+    margin: 0;
     font-size: 1.5rem;
     color: rgb(43, 179, 177);
 }
 
 .subtitle{
     font-size: 1.3rem;
+    margin: 1em 0;
 }
 
 .lime{
@@ -68,6 +70,15 @@ img {
 
 .detail{
     opacity: .5;
+}
+
+.amount,
+.detail{
+    margin: .7em 0;
+}
+
+.description{
+    margin: 0 0 1.5em 0;
 }
 
 button{
